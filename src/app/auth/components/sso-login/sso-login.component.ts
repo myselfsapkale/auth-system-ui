@@ -15,7 +15,7 @@ export class SsoLoginComponent {
   ssoSignInHandler(provider: string): void {
     let url = ``;
 
-    if(provider == 'google') url = `${environment.apiUrl}/auth/${environment.apiVersion}/sign_in_sso_google`;
+    if(provider == 'google') url = `${environment.apiUrl}/${environment.apiVersion}/sign_in_sso_google`;
     
     window.location.href = url;
   }
